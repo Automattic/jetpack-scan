@@ -13,4 +13,5 @@ This is an alpha version! The changes listed here are not final.
 - Initial version
 
 ### Changed
+- Make build usable in projects using tsc with `moduleResolution` set to 'nodenext'.
 - Updated package dependencies.
