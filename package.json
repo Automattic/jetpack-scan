@@ -49,7 +49,7 @@
 	"dependencies": {
 		"@automattic/jetpack-api": "^0.17.2",
 		"@automattic/jetpack-base-styles": "^0.6.19",
-		"@automattic/jetpack-connection": "^0.33.4-alpha",
+		"@automattic/jetpack-connection": "^0.33.4",
 		"@automattic/jetpack-shared-extension-utils": "^0.14.7",
 		"@wordpress/api-fetch": "6.50.0",
 		"@wordpress/element": "5.30.0",
