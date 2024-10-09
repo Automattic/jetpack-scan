@@ -52,7 +52,7 @@
 		"@automattic/jetpack-api": "^0.17.14",
 		"@automattic/jetpack-base-styles": "^0.6.33",
 		"@automattic/jetpack-connection": "^0.35.12-alpha",
-		"@automattic/jetpack-shared-extension-utils": "^0.15.12",
+		"@automattic/jetpack-shared-extension-utils": "^0.15.13-alpha",
 		"@wordpress/api-fetch": "7.8.2",
 		"@wordpress/element": "6.8.1",
 		"@wordpress/i18n": "5.8.2",
