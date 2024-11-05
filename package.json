@@ -24,8 +24,8 @@
 	"type": "module",
 	"devDependencies": {
 		"@automattic/jetpack-webpack-config": "workspace:*",
-		"@babel/core": "7.24.7",
-		"@babel/plugin-transform-react-jsx": "7.24.7",
+		"@babel/core": "7.26.0",
+		"@babel/plugin-transform-react-jsx": "7.25.9",
 		"@jest/globals": "29.7.0",
 		"@storybook/addon-actions": "8.3.5",
 		"@storybook/blocks": "8.3.5",
@@ -52,8 +52,8 @@
 	"dependencies": {
 		"@automattic/jetpack-api": "^0.17.16",
 		"@automattic/jetpack-base-styles": "^0.6.34",
-		"@automattic/jetpack-connection": "^0.35.15",
-		"@automattic/jetpack-shared-extension-utils": "^0.15.15",
+		"@automattic/jetpack-connection": "^0.35.16-alpha",
+		"@automattic/jetpack-shared-extension-utils": "^0.15.16-alpha",
 		"@wordpress/api-fetch": "7.9.0",
 		"@wordpress/element": "6.9.0",
 		"@wordpress/i18n": "5.9.0",
