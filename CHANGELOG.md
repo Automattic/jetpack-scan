@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Adds utilities for retrieving fixer messaging
 
+### Changed
+- Updated package dependencies.
+
 ## [0.2.0] - 2024-11-14
 ### Added
 - Adds fixer utility functions [#40111]
