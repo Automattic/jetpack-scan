@@ -1,6 +1,6 @@
 import { type ThreatFixStatus } from '../types/fixers.js';
 import { type Threat } from '../types/threats.js';
-export declare const getThreatType: (threat: Threat) => "plugin" | "theme" | "core" | "file";
+export declare const getThreatType: (threat: Threat) => "plugins" | "themes" | "core" | "file";
 export declare const fixerTimestampIsStale: (lastUpdatedTimestamp: string) => boolean;
 export declare const fixerIsInError: (fixerStatus: ThreatFixStatus) => boolean;
 export declare const fixerIsInProgress: (fixerStatus: ThreatFixStatus) => boolean;
