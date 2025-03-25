@@ -1,0 +1,44 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+import { __ } from '@wordpress/i18n';
+import { useMemo } from 'react';
+import styles from './styles.module.scss';
+import ThreatNotice from './threat-notice.js';
+/**
+ * FixerStateNotice component
+ *
+ * @param {object}  props                       - The component props.
+ * @param {object}  props.fixerState            - The state of the fixer (inProgress, error, stale).
+ * @param {boolean} props.fixerState.inProgress - Whether the fixer is in progress.
+ * @param {boolean} props.fixerState.error      - Whether the fixer encountered an error.
+ * @param {boolean} props.fixerState.stale      - Whether the fixer is stale.
+ *
+ * @return {JSX.Element | null} The rendered fixer notice or null if no notice is available.
+ */
+const FixerStateNotice = ({ fixerState, }) => {
+    const { status, title, content } = useMemo(() => {
+        if (fixerState.error) {
+            return {
+                status: 'error',
+                title: __('An error occurred auto-fixing this threat', 'jetpack-scan'),
+                content: __('Jetpack encountered a filesystem error while attempting to auto-fix this threat. Please try again later or contact support.', 'jetpack-scan'),
+            };
+        }
+        if (fixerState.stale) {
+            return {
+                status: 'error',
+                title: __('The auto-fixer is taking longer than expected', 'jetpack-scan'),
+                content: __('Jetpack has been attempting to auto-fix this threat for too long, and something may have gone wrong. Please try again later or contact support.', 'jetpack-scan'),
+            };
+        }
+        if (fixerState.inProgress) {
+            return {
+                status: 'success',
+                title: __('An auto-fixer is in progress', 'jetpack-scan'),
+                content: __('Please wait while Jetpack auto-fixes the threat.', 'jetpack-scan'),
+            };
+        }
+        return {};
+    }, [fixerState]);
+    return title ? (_jsx("div", { className: styles['fixer-notice'], children: _jsx(ThreatNotice, { status: status, title: title, content: content }) })) : null;
+};
+export default FixerStateNotice;

@@ -49,24 +49,23 @@ export const getFixerAction = (threat) => {
     }
 };
 export const getDetailedFixerAction = (threat) => {
-    var _a, _b, _c, _d;
     switch (threat.fixable && threat.fixable.fixer) {
         case 'delete':
             if (threat.filename) {
                 return __('Delete file', 'jetpack-scan');
             }
-            if (((_a = threat.extension) === null || _a === void 0 ? void 0 : _a.type) === 'plugins') {
+            if (threat.extension?.type === 'plugins') {
                 return __('Delete plugin from site', 'jetpack-scan');
             }
-            if (((_b = threat.extension) === null || _b === void 0 ? void 0 : _b.type) === 'themes') {
+            if (threat.extension?.type === 'themes') {
                 return __('Delete theme from site', 'jetpack-scan');
             }
             break;
         case 'update':
-            if (((_c = threat.extension) === null || _c === void 0 ? void 0 : _c.type) === 'plugins') {
+            if (threat.extension?.type === 'plugins') {
                 return __('Update plugin to newer version', 'jetpack-scan');
             }
-            if (((_d = threat.extension) === null || _d === void 0 ? void 0 : _d.type) === 'themes') {
+            if (threat.extension?.type === 'themes') {
                 return __('Update theme to newer version', 'jetpack-scan');
             }
             return __('Update', 'jetpack-scan');
@@ -84,7 +83,6 @@ export const getDetailedFixerAction = (threat) => {
     }
 };
 export const getFixerDescription = (threat) => {
-    var _a, _b;
     switch (threat.fixable && threat.fixable.fixer) {
         case 'delete':
             if (threat.filename) {
@@ -96,10 +94,10 @@ export const getFixerDescription = (threat) => {
                 }
                 return __('Delete the infected file.', 'jetpack-scan');
             }
-            if (((_a = threat.extension) === null || _a === void 0 ? void 0 : _a.type) === 'plugins') {
+            if (threat.extension?.type === 'plugins') {
                 return __('Delete the plugin directory to fix the threat.', 'jetpack-scan');
             }
-            if (((_b = threat.extension) === null || _b === void 0 ? void 0 : _b.type) === 'themes') {
+            if (threat.extension?.type === 'themes') {
                 return __('Delete the theme directory to fix the threat.', 'jetpack-scan');
             }
             break;

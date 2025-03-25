@@ -1,0 +1,40 @@
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { Button } from '@automattic/jetpack-components';
+import { __ } from '@wordpress/i18n';
+import { useCallback, useContext, useMemo } from 'react';
+import { getFixerState, getDetailedFixerAction } from '@automattic/jetpack-scan';
+import FixerStateNotice from './fixer-state-notice.js';
+import styles from './styles.module.scss';
+import { ThreatModalContext } from './index.js';
+/**
+ * ThreatActions component
+ *
+ * @return {JSX.Element | null} The rendered action buttons or null if no actions are available.
+ */
+const ThreatActions = () => {
+    const { closeModal, threat, handleFixThreatClick, handleIgnoreThreatClick, handleUnignoreThreatClick, userConnectionNeeded, siteCredentialsNeeded, } = useContext(ThreatModalContext);
+    const disabled = userConnectionNeeded || siteCredentialsNeeded;
+    const fixerState = useMemo(() => {
+        return getFixerState(threat.fixer);
+    }, [threat.fixer]);
+    const detailedFixerAction = useMemo(() => getDetailedFixerAction(threat), [threat]);
+    const onFixClick = useCallback(() => {
+        handleFixThreatClick?.([threat]);
+        closeModal();
+    }, [threat, handleFixThreatClick, closeModal]);
+    const onIgnoreClick = useCallback(() => {
+        handleIgnoreThreatClick?.([threat]);
+        closeModal();
+    }, [threat, handleIgnoreThreatClick, closeModal]);
+    const onUnignoreClick = useCallback(() => {
+        handleUnignoreThreatClick?.([threat]);
+        closeModal();
+    }, [threat, handleUnignoreThreatClick, closeModal]);
+    if (!threat?.status || threat.status === 'fixed') {
+        return null;
+    }
+    return (_jsxs("div", { className: styles['modal-footer'], children: [_jsx(FixerStateNotice, { fixerState: fixerState }), _jsxs("div", { className: styles['threat-actions'], children: [threat.status === 'ignored' && (_jsx(Button, { disabled: disabled, isDestructive: true, variant: "secondary", onClick: onUnignoreClick, children: __('Un-ignore threat', 'jetpack-scan') })), threat.status === 'current' && (_jsxs(_Fragment, { children: [_jsx(Button, { isDestructive: true, variant: "secondary", onClick: onIgnoreClick, disabled: disabled || (fixerState.inProgress && !fixerState.stale), children: __('Ignore threat', 'jetpack-scan') }), threat.fixable && (_jsx(Button, { isPrimary: true, disabled: disabled || (fixerState.inProgress && !fixerState.stale), onClick: onFixClick, children: fixerState.error || fixerState.stale
+                                    ? __('Retry fixer', 'jetpack-scan')
+                                    : detailedFixerAction }))] }))] })] }));
+};
+export default ThreatActions;
