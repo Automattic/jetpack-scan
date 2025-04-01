@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Added threat components
 
+### Changed
+- Update package dependencies.
+
 ## [0.5.9] - 2025-03-18
 ### Changed
 - Update package dependencies. [#42509]

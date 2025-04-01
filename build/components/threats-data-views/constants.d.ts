@@ -8,11 +8,11 @@ export declare const THREAT_TYPES: {
     label: string;
 }[];
 export declare const THREAT_ICONS: {
-    plugins: any;
-    themes: any;
-    core: any;
-    file: any;
-    default: any;
+    plugins: import("react").JSX.Element;
+    themes: import("react").JSX.Element;
+    core: import("react").JSX.Element;
+    file: import("react").JSX.Element;
+    default: import("react").JSX.Element;
 };
 export declare const THREAT_FIELD_THREAT = "threat";
 export declare const THREAT_FIELD_TITLE = "title";

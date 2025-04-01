@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import { type ActionButton, type Filter } from '@wordpress/dataviews';
 import { type Threat } from '@automattic/jetpack-scan';
 /**

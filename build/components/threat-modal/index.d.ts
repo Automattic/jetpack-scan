@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import { Modal } from '@wordpress/components';
 import { type Threat } from '@automattic/jetpack-scan';
 interface ThreatModalContextType {

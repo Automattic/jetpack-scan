@@ -1,4 +1,3 @@
-/// <reference types="react" resolution-mode="require"/>
 import { type Threat } from '@automattic/jetpack-scan';
 /**
  * Threat Fixer Button component.
