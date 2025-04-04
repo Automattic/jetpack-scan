@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - Added threat components
 
 ### Changed
+- Code: First pass of style coding standards.
 - Update package dependencies.
 
 ## [0.5.9] - 2025-03-18
