@@ -17,6 +17,7 @@ This is an alpha version! The changes listed here are not final.
 - Update package dependencies.
 
 ### Fixed
+- Code: Update stylesheets to use WordPress font styles.
 - Fixed TS type checking in the monorepo
 
 ## [0.5.9] - 2025-03-18
