@@ -2,7 +2,7 @@ import { jsx as _jsx } from "react/jsx-runtime";
 import { __ } from '@wordpress/i18n';
 import { useMemo } from 'react';
 import styles from './styles.module.scss';
-import ThreatNotice from './threat-notice.js';
+import ThreatNotice from "./threat-notice.js";
 /**
  * FixerStateNotice component
  *

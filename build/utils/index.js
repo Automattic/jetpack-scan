@@ -1,5 +1,5 @@
 import { __, sprintf } from '@wordpress/i18n';
-import { FIXER_IS_STALE_THRESHOLD } from '../constants/index.js';
+import { FIXER_IS_STALE_THRESHOLD } from "../constants/index.js";
 export const getThreatType = (threat) => {
     if (threat.signature === 'Vulnerable.WP.Core') {
         return 'core';

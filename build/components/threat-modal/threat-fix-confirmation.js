@@ -1,12 +1,12 @@
 import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
 import { __ } from '@wordpress/i18n';
 import { useContext } from 'react';
-import ThreatActions from './threat-actions.js';
-import ThreatFixDetails from './threat-fix-details.js';
-import ThreatNotice from './threat-notice.js';
-import ThreatSummary from './threat-summary.js';
-import ThreatTechnicalDetails from './threat-technical-details.js';
-import { ThreatModalContext } from './index.js';
+import { ThreatModalContext } from "./index.js";
+import ThreatActions from "./threat-actions.js";
+import ThreatFixDetails from "./threat-fix-details.js";
+import ThreatNotice from "./threat-notice.js";
+import ThreatSummary from "./threat-summary.js";
+import ThreatTechnicalDetails from "./threat-technical-details.js";
 /**
  * ThreatFixConfirmation component
  *

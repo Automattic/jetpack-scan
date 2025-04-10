@@ -1,6 +1,6 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 import { render, screen } from '@testing-library/react';
-import ThreatsDataViews from '../index.js';
+import ThreatsDataViews from "../index.js";
 const data = [
     // Scan API Data
     {

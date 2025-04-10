@@ -3,8 +3,8 @@ import { ContextualUpgradeTrigger, Text } from '@automattic/jetpack-components';
 import { __, sprintf } from '@wordpress/i18n';
 import { useMemo, useContext } from 'react';
 import { getFixerDescription } from '@automattic/jetpack-scan';
+import { ThreatModalContext } from "./index.js";
 import styles from './styles.module.scss';
-import { ThreatModalContext } from './index.js';
 /**
  * ThreatFixDetails component
  *

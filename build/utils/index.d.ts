@@ -1,5 +1,5 @@
-import { type ThreatFixStatus } from '../types/fixers.js';
-import { type Threat } from '../types/threats.js';
+import { type ThreatFixStatus } from '../types/fixers.ts';
+import { type Threat } from '../types/threats.ts';
 export declare const getThreatType: (threat: Threat) => "plugins" | "themes" | "core" | "file";
 export declare const fixerTimestampIsStale: (lastUpdatedTimestamp: string) => boolean;
 export declare const fixerIsInError: (fixerStatus: ThreatFixStatus) => boolean;

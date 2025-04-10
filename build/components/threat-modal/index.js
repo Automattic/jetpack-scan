@@ -2,9 +2,9 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Text } from '@automattic/jetpack-components';
 import { Modal } from '@wordpress/components';
 import { createContext } from 'react';
-import ThreatSeverityBadge from '../threat-severity-badge/index.js';
+import ThreatSeverityBadge from "../threat-severity-badge/index.js";
 import styles from './styles.module.scss';
-import ThreatFixConfirmation from './threat-fix-confirmation.js';
+import ThreatFixConfirmation from "./threat-fix-confirmation.js";
 export const ThreatModalContext = createContext(null);
 /**
  * ThreatModal component

@@ -6,10 +6,10 @@ import { __ } from '@wordpress/i18n';
 import { Icon } from '@wordpress/icons';
 import { useCallback, useMemo, useState } from 'react';
 import { ThreatSeverityBadge, getThreatType } from '@automattic/jetpack-scan';
-import ThreatFixerButton from '../threat-fixer-button/index.js';
-import { THREAT_ACTION_FIX, THREAT_ACTION_IGNORE, THREAT_ACTION_UNIGNORE, THREAT_FIELD_AUTO_FIX, THREAT_FIELD_DESCRIPTION, THREAT_FIELD_EXTENSION, THREAT_FIELD_FIRST_DETECTED, THREAT_FIELD_FIXED_ON, THREAT_FIELD_ICON, THREAT_FIELD_PLUGIN, THREAT_FIELD_SEVERITY, THREAT_FIELD_SIGNATURE, THREAT_FIELD_STATUS, THREAT_FIELD_THEME, THREAT_FIELD_TITLE, THREAT_FIELD_TYPE, THREAT_ICONS, THREAT_STATUSES, THREAT_TYPES, } from './constants.js';
+import ThreatFixerButton from "../threat-fixer-button/index.js";
+import { THREAT_ACTION_FIX, THREAT_ACTION_IGNORE, THREAT_ACTION_UNIGNORE, THREAT_FIELD_AUTO_FIX, THREAT_FIELD_DESCRIPTION, THREAT_FIELD_EXTENSION, THREAT_FIELD_FIRST_DETECTED, THREAT_FIELD_FIXED_ON, THREAT_FIELD_ICON, THREAT_FIELD_PLUGIN, THREAT_FIELD_SEVERITY, THREAT_FIELD_SIGNATURE, THREAT_FIELD_STATUS, THREAT_FIELD_THEME, THREAT_FIELD_TITLE, THREAT_FIELD_TYPE, THREAT_ICONS, THREAT_STATUSES, THREAT_TYPES, } from "./constants.js";
 import styles from './styles.module.scss';
-import ThreatsStatusToggleGroupControl from './threats-status-toggle-group-control.js';
+import ThreatsStatusToggleGroupControl from "./threats-status-toggle-group-control.js";
 /**
  * DataViews component for displaying security threats.
  *
