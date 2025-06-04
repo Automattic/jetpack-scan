@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update package dependencies.
+
 ## [1.0.0] - 2025-06-03
 ### Added
 - Add threat components. [#41654]
@@ -128,6 +135,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Updated dependencies. [#39754]
 
+[1.0.1-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.0.0...v1.0.1-alpha
 [1.0.0]: https://github.com/Automattic/jetpack-scan/compare/v0.5.9...v1.0.0
 [0.5.9]: https://github.com/Automattic/jetpack-scan/compare/v0.5.8...v0.5.9
 [0.5.8]: https://github.com/Automattic/jetpack-scan/compare/v0.5.7...v0.5.8
