@@ -1,5 +1,6 @@
 import { Modal } from '@wordpress/components';
 import { type Threat } from '@automattic/jetpack-scan';
+import type { ComponentProps } from 'react';
 interface ThreatModalContextType {
     closeModal: () => void;
     threat: Threat;
@@ -47,5 +48,5 @@ export default function ThreatModal({ threat, isUserConnected, hasConnectedOwner
     handleFixThreatClick?: (threats: Threat[]) => void;
     handleIgnoreThreatClick?: (threats: Threat[]) => void;
     handleUnignoreThreatClick?: (threats: Threat[]) => void;
-} & React.ComponentProps<typeof Modal>): JSX.Element;
+} & ComponentProps<typeof Modal>): JSX.Element;
 export {};
