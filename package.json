@@ -45,7 +45,7 @@
 	"types": "./build/index.d.ts",
 	"dependencies": {
 		"@automattic/jetpack-api": "^1.0.5",
-		"@automattic/jetpack-base-styles": "^1.0.5",
+		"@automattic/jetpack-base-styles": "^1.0.6-alpha",
 		"@automattic/jetpack-components": "^1.1.15-alpha",
 		"@wordpress/api-fetch": "7.26.0",
 		"@wordpress/components": "29.12.0",
