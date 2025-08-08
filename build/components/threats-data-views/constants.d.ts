@@ -3,16 +3,25 @@ export declare const THREAT_STATUSES: {
     label: string;
     variant?: 'success' | 'warning';
 }[];
-export declare const THREAT_TYPES: {
+export declare const THREAT_TYPES: ({
     value: string;
-    label: string;
-}[];
+    label: import("@wordpress/i18n/build-types/types.js").TranslatableText<"Plugin">;
+} | {
+    value: string;
+    label: import("@wordpress/i18n/build-types/types.js").TranslatableText<"Theme">;
+} | {
+    value: string;
+    label: import("@wordpress/i18n/build-types/types.js").TranslatableText<"WordPress">;
+} | {
+    value: string;
+    label: import("@wordpress/i18n/build-types/types.js").TranslatableText<"File">;
+})[];
 export declare const THREAT_ICONS: {
-    plugins: import("react").JSX.Element;
-    themes: import("react").JSX.Element;
-    core: import("react").JSX.Element;
-    file: import("react").JSX.Element;
-    default: import("react").JSX.Element;
+    plugins: any;
+    themes: any;
+    core: any;
+    file: any;
+    default: any;
 };
 export declare const THREAT_FIELD_THREAT = "threat";
 export declare const THREAT_FIELD_TITLE = "title";

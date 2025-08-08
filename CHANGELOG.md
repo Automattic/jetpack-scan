@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Update @wordpress/dataviews to 5.0.0
+- Update package dependencies.
 
 ## [1.1.0] - 2025-07-30
 ### Added

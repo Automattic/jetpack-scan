@@ -10,6 +10,6 @@ export declare const getFixerState: (fixerStatus: ThreatFixStatus) => {
     error: boolean;
     stale: boolean;
 };
-export declare const getFixerAction: (threat: Threat) => string;
-export declare const getDetailedFixerAction: (threat: Threat) => string;
+export declare const getFixerAction: (threat: Threat) => import("@wordpress/i18n/build-types/types.js").TranslatableText<"Delete"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Update"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Replace"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Auto-fix">;
+export declare const getDetailedFixerAction: (threat: Threat) => import("@wordpress/i18n/build-types/types.js").TranslatableText<"Update"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Auto-fix"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Delete file"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Delete plugin from site"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Delete theme from site"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Update plugin to newer version"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Update theme to newer version"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Replace from backup"> | import("@wordpress/i18n/build-types/types.js").TranslatableText<"Replace default salts">;
 export declare const getFixerDescription: (threat: Threat) => string;
