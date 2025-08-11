@@ -32,9 +32,9 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@automattic/jetpack-api": "^1.0.7-alpha",
-		"@automattic/jetpack-base-styles": "^1.0.7-alpha",
-		"@automattic/jetpack-components": "^1.1.18-alpha",
+		"@automattic/jetpack-api": "^1.0.7",
+		"@automattic/jetpack-base-styles": "^1.0.7",
+		"@automattic/jetpack-components": "^1.1.18",
 		"@wordpress/api-fetch": "7.27.0",
 		"@wordpress/components": "30.0.0",
 		"@wordpress/dataviews": "5.0.0",
