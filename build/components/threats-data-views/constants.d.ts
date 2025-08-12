@@ -5,16 +5,16 @@ export declare const THREAT_STATUSES: {
 }[];
 export declare const THREAT_TYPES: ({
     value: string;
-    label: import("@wordpress/i18n/build-types/types.js").TranslatableText<"Plugin">;
+    label: import("@wordpress/i18n").TranslatableText<"Plugin">;
 } | {
     value: string;
-    label: import("@wordpress/i18n/build-types/types.js").TranslatableText<"Theme">;
+    label: import("@wordpress/i18n").TranslatableText<"Theme">;
 } | {
     value: string;
-    label: import("@wordpress/i18n/build-types/types.js").TranslatableText<"WordPress">;
+    label: import("@wordpress/i18n").TranslatableText<"WordPress">;
 } | {
     value: string;
-    label: import("@wordpress/i18n/build-types/types.js").TranslatableText<"File">;
+    label: import("@wordpress/i18n").TranslatableText<"File">;
 })[];
 export declare const THREAT_ICONS: {
     plugins: any;
