@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - Added missing types for protect plugin.
 
 ### Changed
+- Update @wordpress/dataviews package from v7 to v9
 - Update @wordpress/dataviews package v5.0.0 → v7.0.0
 - Update @wordpress/dataviews to 5.0.0
 - Update package dependencies.
