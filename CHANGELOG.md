@@ -5,18 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.2.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.2.0] - 2025-10-10
 ### Added
-- Added missing types for protect plugin.
+- Add missing types. [#44787]
 
 ### Changed
-- Update @wordpress/dataviews package from v7 to v9
-- Update @wordpress/dataviews package v5.0.0 → v7.0.0
-- Update @wordpress/dataviews to 5.0.0
-- Update package dependencies.
+- Update @wordpress/dataviews package. [#44376] [#45012] [#45213]
+- Update package dependencies. [#44677] [#44701] [#45027] [#45097] [#45229] [#45335] [#45428]
 
 ## [1.1.0] - 2025-07-30
 ### Added
@@ -156,7 +151,7 @@ This is an alpha version! The changes listed here are not final.
 ### Removed
 - Updated dependencies. [#39754]
 
-[1.2.0-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.1.0...v1.2.0-alpha
+[1.2.0]: https://github.com/Automattic/jetpack-scan/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Automattic/jetpack-scan/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/Automattic/jetpack-scan/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/Automattic/jetpack-scan/compare/v1.0.0...v1.0.1
