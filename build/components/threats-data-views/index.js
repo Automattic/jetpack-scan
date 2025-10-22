@@ -345,7 +345,6 @@ export default function ThreatsDataViews({ data, filters, onChangeSelection, isT
                 id: THREAT_ACTION_IGNORE,
                 label: __('Ignore', 'jetpack-scan'),
                 isPrimary: true,
-                isDestructive: true,
                 callback: onIgnoreThreats,
                 isEligible(item) {
                     if (!onIgnoreThreats) {
@@ -363,7 +362,6 @@ export default function ThreatsDataViews({ data, filters, onChangeSelection, isT
                 id: THREAT_ACTION_UNIGNORE,
                 label: __('Unignore', 'jetpack-scan'),
                 isPrimary: true,
-                isDestructive: true,
                 callback: onUnignoreThreats,
                 isEligible(item) {
                     if (!onUnignoreThreats) {
