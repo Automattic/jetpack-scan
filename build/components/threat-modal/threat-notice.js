@@ -2,7 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Text, Button } from '@automattic/jetpack-components';
 import { Notice, Spinner } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
-import { Icon, warning } from '@wordpress/icons';
+import { Icon, cautionFilled as warning } from '@wordpress/icons';
 import { useContext } from 'react';
 import { ThreatModalContext } from "./index.js";
 import styles from './styles.module.scss';
