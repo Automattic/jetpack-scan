@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.2-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update package dependencies.
+
 ## [1.2.1] - 2025-11-21
 ### Changed
 - Replace icons removed from @wordpress/icons with alternatives. [#45760]
@@ -157,6 +164,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Updated dependencies. [#39754]
 
+[1.2.2-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.2.1...v1.2.2-alpha
 [1.2.1]: https://github.com/Automattic/jetpack-scan/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/Automattic/jetpack-scan/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Automattic/jetpack-scan/compare/v1.0.2...v1.1.0
