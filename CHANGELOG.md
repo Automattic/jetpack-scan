@@ -12,6 +12,12 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update package dependencies.
 
+### Removed
+- Remove peer dependency on `@wordpress/i18n`, as it already has a non-peer dependency on the package.
+
+### Fixed
+- `react` and `react-dom` should be peer dependencies, not direct dependencies.
+
 ## [1.2.1] - 2025-11-21
 ### Changed
 - Replace icons removed from @wordpress/icons with alternatives. [#45760]
