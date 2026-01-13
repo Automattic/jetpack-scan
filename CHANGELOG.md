@@ -13,6 +13,7 @@ This is an alpha version! The changes listed here are not final.
 - Update package dependencies.
 
 ### Removed
+- =
 - Remove peer dependency on `@wordpress/i18n`, as it already has a non-peer dependency on the package.
 
 ### Fixed
