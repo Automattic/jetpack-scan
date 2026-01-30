@@ -84,7 +84,7 @@ export default function ThreatsStatusToggleGroupControl({ data, view, onChangeVi
         return null;
     }
     try {
-        return (_jsx("div", { children: _jsx("div", { className: styles['toggle-group-control'], children: _jsxs(ToggleGroupControl, { value: selectedValue, onChange: onStatusFilterChange, isBlock: true, hideLabelFromVision: true, __nextHasNoMarginBottom: true, __next40pxDefaultSize: true, children: [_jsx(ToggleGroupControlOption, { value: "active", label: sprintf(
+        return (_jsx("div", { children: _jsx("div", { className: styles['toggle-group-control'], children: _jsxs(ToggleGroupControl, { label: __('Filter threats by status', 'jetpack-scan'), value: selectedValue, onChange: onStatusFilterChange, isBlock: true, hideLabelFromVision: true, __nextHasNoMarginBottom: true, __next40pxDefaultSize: true, children: [_jsx(ToggleGroupControlOption, { value: "active", label: sprintf(
                             /* translators: %d: number of active threats */ __('Active threats (%d)', 'jetpack-scan'), activeThreatsCount) }), _jsx(ToggleGroupControlOption, { value: "historic", label: sprintf(
                             /* translators: %d: number of historic threats */
                             __('History (%d)', 'jetpack-scan'), historicThreatsCount) })] }) }) }));

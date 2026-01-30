@@ -28,7 +28,10 @@ export const ThreatModalContext = createContext(null);
 export default function ThreatModal({ threat, isUserConnected, hasConnectedOwner, userIsConnecting, handleConnectUser, credentials, credentialsIsFetching, credentialsRedirectUrl, handleUpgradeClick, handleFixThreatClick, handleIgnoreThreatClick, handleUnignoreThreatClick, ...modalProps }) {
     const userConnectionNeeded = !isUserConnected || !hasConnectedOwner;
     const siteCredentialsNeeded = !credentials || credentials.length === 0;
-    return (_jsx(Modal, { title: _jsxs("div", { className: styles.title, children: [_jsx(Text, { variant: "title-small", children: threat.title }), !!threat.severity && _jsx(ThreatSeverityBadge, { severity: threat.severity })] }), size: "large", ...modalProps, children: _jsx("div", { className: styles['threat-details'], children: _jsx(ThreatModalContext.Provider, { value: {
+    // Cast title to string
+    // TODO: This should not be done. If needed, we should render the modal with hideHeader={true} and then use our own header inside.
+    const modalTitle = (_jsxs("div", { className: styles.title, children: [_jsx(Text, { variant: "title-small", children: threat.title }), !!threat.severity && _jsx(ThreatSeverityBadge, { severity: threat.severity })] }));
+    return (_jsx(Modal, { title: modalTitle, size: "large", ...modalProps, children: _jsx("div", { className: styles['threat-details'], children: _jsx(ThreatModalContext.Provider, { value: {
                     closeModal: modalProps.onRequestClose,
                     threat,
                     handleUpgradeClick,
