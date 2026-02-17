@@ -9,8 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Automattic/jetpack.git",
-		"directory": "projects/js-packages/scan"
+		"url": "git+https://github.com/Automattic/jetpack-scan.git"
 	},
 	"license": "GPL-2.0-or-later",
 	"author": "Automattic",
@@ -32,7 +31,7 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@automattic/jetpack-api": "^1.0.16",
+		"@automattic/jetpack-api": "^1.0.17-alpha",
 		"@automattic/jetpack-base-styles": "^1.0.16-alpha",
 		"@automattic/jetpack-components": "^1.4.13-alpha",
 		"@wordpress/api-fetch": "7.39.0",
