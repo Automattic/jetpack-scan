@@ -3,7 +3,7 @@ import { ContextualUpgradeTrigger, Text } from '@automattic/jetpack-components';
 import { __, sprintf } from '@wordpress/i18n';
 import { useMemo, useContext } from 'react';
 import { getFixerDescription } from '@automattic/jetpack-scan';
-import { ThreatModalContext } from "./index.js";
+import { ThreatModalContext } from './index.js';
 import styles from './styles.module.scss';
 /**
  * ThreatFixDetails component
@@ -35,6 +35,7 @@ const ThreatFixDetails = () => {
     if (!threat.fixable && !threat.fixedIn) {
         return null;
     }
-    return (_jsxs("div", { className: styles.section, children: [_jsx(Text, { variant: "title-small", children: title }), _jsx(Text, { children: fix }), handleUpgradeClick && (_jsx(ContextualUpgradeTrigger, { description: __('Looking for advanced scan results and one-click fixes?', 'jetpack-scan'), cta: __('Upgrade Jetpack now', 'jetpack-scan'), onClick: handleUpgradeClick }))] }));
+    return (_jsxs("div", { className: styles.section, children: [
+            _jsx(Text, { variant: "title-small", children: title }), _jsx(Text, { children: fix }), handleUpgradeClick && (_jsx(ContextualUpgradeTrigger, { description: __('Looking for advanced scan results and one-click fixes?', 'jetpack-scan'), cta: __('Upgrade Jetpack now', 'jetpack-scan'), onClick: handleUpgradeClick }))] }));
 };
 export default ThreatFixDetails;

@@ -16,7 +16,7 @@ import { type Threat } from '@automattic/jetpack-scan';
  *
  * @return {JSX.Element} The ThreatsDataViews component.
  */
-export default function ThreatsDataViews({ data, filters, onChangeSelection, isThreatEligibleForFix, isThreatEligibleForIgnore, isThreatEligibleForUnignore, onFixThreats, onIgnoreThreats, onUnignoreThreats, }: {
+export default function ThreatsDataViews({ data, filters, onChangeSelection, isThreatEligibleForFix, isThreatEligibleForIgnore, isThreatEligibleForUnignore, onFixThreats, onIgnoreThreats, onUnignoreThreats }: {
     data: Threat[];
     filters?: Filter[];
     onChangeSelection?: (selectedItemIds: string[]) => void;

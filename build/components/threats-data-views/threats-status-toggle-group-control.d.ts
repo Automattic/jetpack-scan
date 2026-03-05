@@ -8,7 +8,7 @@ import { type Threat } from '@automattic/jetpack-scan';
  * @param { Function } props.onChangeView - Callback function to handle view changes.
  * @return {JSX.Element|null} The component or null.
  */
-export default function ThreatsStatusToggleGroupControl({ data, view, onChangeView, }: {
+export default function ThreatsStatusToggleGroupControl({ data, view, onChangeView }: {
     data: Threat[];
     view: View;
     onChangeView: (newView: View) => void;

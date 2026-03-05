@@ -2,9 +2,9 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Text } from '@automattic/jetpack-components';
 import { Modal } from '@wordpress/components';
 import { createContext } from 'react';
-import ThreatSeverityBadge from "../threat-severity-badge/index.js";
+import ThreatSeverityBadge from '../threat-severity-badge/index.js';
 import styles from './styles.module.scss';
-import ThreatFixConfirmation from "./threat-fix-confirmation.js";
+import ThreatFixConfirmation from './threat-fix-confirmation.js';
 export const ThreatModalContext = createContext(null);
 /**
  * ThreatModal component
@@ -30,7 +30,8 @@ export default function ThreatModal({ threat, isUserConnected, hasConnectedOwner
     const siteCredentialsNeeded = !credentials || credentials.length === 0;
     // Cast title to string
     // TODO: This should not be done. If needed, we should render the modal with hideHeader={true} and then use our own header inside.
-    const modalTitle = (_jsxs("div", { className: styles.title, children: [_jsx(Text, { variant: "title-small", children: threat.title }), !!threat.severity && _jsx(ThreatSeverityBadge, { severity: threat.severity })] }));
+    const modalTitle = (_jsxs("div", { className: styles.title, children: [
+            _jsx(Text, { variant: "title-small", children: threat.title }), !!threat.severity && _jsx(ThreatSeverityBadge, { severity: threat.severity })] }));
     return (_jsx(Modal, { title: modalTitle, size: "large", ...modalProps, children: _jsx("div", { className: styles['threat-details'], children: _jsx(ThreatModalContext.Provider, { value: {
                     closeModal: modalProps.onRequestClose,
                     threat,

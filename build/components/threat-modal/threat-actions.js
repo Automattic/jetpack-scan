@@ -1,10 +1,10 @@
-import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { Fragment as _Fragment, jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Button } from '@automattic/jetpack-components';
 import { __ } from '@wordpress/i18n';
 import { useCallback, useContext, useMemo } from 'react';
 import { getFixerState, getDetailedFixerAction } from '@automattic/jetpack-scan';
-import FixerStateNotice from "./fixer-state-notice.js";
-import { ThreatModalContext } from "./index.js";
+import FixerStateNotice from './fixer-state-notice.js';
+import { ThreatModalContext } from './index.js';
 import styles from './styles.module.scss';
 /**
  * ThreatActions component
@@ -33,8 +33,11 @@ const ThreatActions = () => {
     if (!threat?.status || threat.status === 'fixed') {
         return null;
     }
-    return (_jsxs("div", { className: styles['modal-footer'], children: [_jsx(FixerStateNotice, { fixerState: fixerState }), _jsxs("div", { className: styles['threat-actions'], children: [threat.status === 'ignored' && (_jsx(Button, { disabled: disabled, isDestructive: true, variant: "secondary", onClick: onUnignoreClick, children: __('Un-ignore threat', 'jetpack-scan') })), threat.status === 'current' && (_jsxs(_Fragment, { children: [_jsx(Button, { isDestructive: true, variant: "secondary", onClick: onIgnoreClick, disabled: disabled || (fixerState.inProgress && !fixerState.stale), children: __('Ignore threat', 'jetpack-scan') }), threat.fixable && (_jsx(Button, { isPrimary: true, disabled: disabled || (fixerState.inProgress && !fixerState.stale), onClick: onFixClick, children: fixerState.error || fixerState.stale
+    return (_jsxs("div", { className: styles['modal-footer'], children: [
+            _jsx(FixerStateNotice, { fixerState: fixerState }), _jsxs("div", { className: styles['threat-actions'], children: [threat.status === 'ignored' && (_jsx(Button, { disabled: disabled, isDestructive: true, variant: "secondary", onClick: onUnignoreClick, children: __('Un-ignore threat', 'jetpack-scan') })), threat.status === 'current' && (_jsxs(_Fragment, { children: [
+                            _jsx(Button, { isDestructive: true, variant: "secondary", onClick: onIgnoreClick, disabled: disabled || (fixerState.inProgress && !fixerState.stale), children: __('Ignore threat', 'jetpack-scan') }), threat.fixable && (_jsx(Button, { isPrimary: true, disabled: disabled || (fixerState.inProgress && !fixerState.stale), onClick: onFixClick, children: fixerState.error || fixerState.stale
                                     ? __('Retry fixer', 'jetpack-scan')
-                                    : detailedFixerAction }))] }))] })] }));
+                                    : detailedFixerAction }))] }))] })
+        ] }));
 };
 export default ThreatActions;

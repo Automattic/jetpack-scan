@@ -2,7 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Button, Text } from '@automattic/jetpack-components';
 import { __ } from '@wordpress/i18n';
 import { useContext } from 'react';
-import { ThreatModalContext } from "./index.js";
+import { ThreatModalContext } from './index.js';
 import styles from './styles.module.scss';
 /**
  * ThreatSummary component

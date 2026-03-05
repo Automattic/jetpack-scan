@@ -9,7 +9,7 @@
  * @return {JSX.Element} The rendered ThreatNotice component.
  */
 declare const ThreatNotice: ({ status, title, content, }: {
-    status?: "warning" | "error" | "success" | undefined;
+    status?: "error" | "success" | "warning";
     title: string;
     content: string;
 }) => JSX.Element;

@@ -9,7 +9,7 @@ import { type Threat } from '@automattic/jetpack-scan';
  *
  * @return {JSX.Element} The component.
  */
-export default function ThreatFixerButton({ threat, className, onClick, }: {
+export default function ThreatFixerButton({ threat, className, onClick }: {
     threat: Threat;
     onClick: (items: Threat[]) => void;
     className?: string;
