@@ -5,16 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.3.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.3.0] - 2026-04-11
 ### Changed
-- Set `.repository.url` in `package.json` to the mirror repo rather than the monorepo. Required for enabling provenance.
-- Switch to Native TypeScript compiler based on Go.
-- Update DataViews dependency.
-- Update dependencies.
-- Update package dependencies.
+- Set `.repository.url` in `package.json` to the mirror repo rather than the monorepo. Required for enabling provenance. [#47149]
+- Switch to Native TypeScript compiler based on Go. [#47375]
+- Update DataViews dependency. [#46973]
+- Update dependencies. [#47038] [#47472]
+- Update package dependencies. [#47285] [#47300] [#47309] [#47684] [#47719] [#47799] [#47870] [#47890]
 
 ## [1.2.2] - 2026-02-04
 ### Changed
@@ -178,7 +175,7 @@ This is an alpha version! The changes listed here are not final.
 ### Removed
 - Updated dependencies. [#39754]
 
-[1.3.0-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.2.2...v1.3.0-alpha
+[1.3.0]: https://github.com/Automattic/jetpack-scan/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/Automattic/jetpack-scan/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/Automattic/jetpack-scan/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/Automattic/jetpack-scan/compare/v1.1.0...v1.2.0
