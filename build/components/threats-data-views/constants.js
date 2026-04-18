@@ -1,8 +1,8 @@
 import { __ } from '@wordpress/i18n';
 import { code as fileIcon, color as themeIcon, plugins as pluginIcon, shield as shieldIcon, wordpress as coreIcon, } from '@wordpress/icons';
 export const THREAT_STATUSES = [
-    { value: 'current', label: __('Active', 'jetpack-scan'), variant: 'warning' },
-    { value: 'fixed', label: __('Fixed', 'jetpack-scan'), variant: 'success' },
+    { value: 'current', label: __('Active', 'jetpack-scan'), intent: 'medium' },
+    { value: 'fixed', label: __('Fixed', 'jetpack-scan'), intent: 'stable' },
     { value: 'ignored', label: __('Ignored', 'jetpack-scan') },
 ];
 export const THREAT_TYPES = [

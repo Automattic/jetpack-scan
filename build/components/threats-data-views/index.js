@@ -1,9 +1,9 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import { Badge } from '@automattic/jetpack-components';
 import { DataViews, filterSortAndPaginate, } from '@wordpress/dataviews';
 import { dateI18n } from '@wordpress/date';
 import { __ } from '@wordpress/i18n';
 import { Icon } from '@wordpress/icons';
+import { Badge } from '@wordpress/ui';
 import { useCallback, useMemo, useState } from 'react';
 import { ThreatSeverityBadge, getThreatType } from '@automattic/jetpack-scan';
 import ThreatFixerButton from '../threat-fixer-button/index.js';
@@ -170,10 +170,10 @@ export default function ThreatsDataViews({ data, filters, onChangeSelection, isT
                     if (item.status) {
                         const status = THREAT_STATUSES.find(({ value }) => value === item.status);
                         if (status) {
-                            return _jsx(Badge, { variant: status?.variant, children: status.label });
+                            return _jsx(Badge, { intent: status.intent, children: status.label });
                         }
                     }
-                    return _jsx(Badge, { variant: "warning", children: __('Active', 'jetpack-scan') });
+                    return _jsx(Badge, { intent: "medium", children: __('Active', 'jetpack-scan') });
                 },
             },
             {

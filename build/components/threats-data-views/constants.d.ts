@@ -1,7 +1,7 @@
 export declare const THREAT_STATUSES: {
     value: string;
     label: string;
-    variant?: 'success' | 'warning';
+    intent?: 'medium' | 'stable';
 }[];
 export declare const THREAT_TYPES: ({
     value: string;
