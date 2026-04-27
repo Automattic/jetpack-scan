@@ -11,6 +11,7 @@ This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Badge: Migrated usages to @wordpress/ui Badge.
+- Internal: No longer require automattic/jetpack-changelogger as a per-project dev dependency.
 - Update package dependencies.
 
 ## [1.3.0] - 2026-04-11
