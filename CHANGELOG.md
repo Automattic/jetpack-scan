@@ -5,14 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.3.1-alpha] - unreleased
+## [1.4.0-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
+
+### Added
+- Add an optional `empty` prop to `ThreatsDataViews` that's forwarded to the underlying `DataViews` so consumers can render their own empty-state node (heading, body, CTA) instead of DataViews' built-in "no items" body.
+- `ThreatsDataViews`: accept `RenderFixModal` / `RenderIgnoreModal` / `RenderUnignoreModal` props so consumers can route the row actions through DataViews-managed confirmation modals (`RenderModalProps< Threat >`) instead of fire-and-forget callbacks. The existing `onFixThreats` / `onIgnoreThreats` / `onUnignoreThreats` callbacks are still honoured when no render-modal is supplied; render-modal props take precedence when both are passed for the same action.
+- `ThreatsDataViews`: add `onTrackEvent?: ( event: string, properties?: Record< string, unknown > ) => void` prop. When supplied, the component fires DataViews-canonical event names on view transitions (`search` with `{ has_query }`, `layout_changed` with `{ layout }`, `page_change` with `{ page }`, `filter_change`, and a generic `view_change`) by diffing the previous view against the next one in `onChangeView`. Consumers add their own prefix (e.g. `jetpack_scan_*`, `jetpack_protect_*`) and forward to their analytics client. Backwards compatible — when `onTrackEvent` is omitted no events fire.
+- `ThreatsDataViews`: add `persistKey?: string` prop. When set, the component hydrates its initial view (filters, sort, search, pagination, layout) from `localStorage[persistKey]` and writes back on every change. Use stable, namespaced keys per panel (e.g. `jetpack-scan:active-threats:view`) so consumer panels don't collide. Quietly no-ops when `localStorage` is unavailable (privacy mode, full disk).
+- `ThreatsDataViews`: add `RenderViewModal?: ( props: RenderModalProps< Threat > ) => ReactElement` prop. Unlike the existing `RenderFixModal` / `RenderIgnoreModal` / `RenderUnignoreModal`, the resulting "View details" row action is always eligible (not gated by `fixable` / `status`) so the user can drill into any row regardless of state. Renders inside a `large` DataViews modal.
+- `ThreatsDataViews`: add `showStatusFilter?: boolean` prop (defaults to `true`). Lets consumers that already filter the dataset by status outside the component (e.g. page-level Active threats / History tabs in Scan) opt out of the in-table active/historic toggle. Existing callers (Protect) keep the toggle by default.
 
 ### Changed
 - Badge: Migrated usages to @wordpress/ui Badge.
 - Internal: No longer require automattic/jetpack-changelogger as a per-project dev dependency.
+- Switch the package to source-exports (mirrors `@automattic/jetpack-connection`): consumers resolve `@automattic/jetpack-scan` directly to `./src/index.ts`, so `tsgo` compile is no longer needed. `@wordpress/build` (esbuild) consumers process the TS + `*.module.scss` natively; webpack consumers (Protect plugin) keep working through the same `jetpack:src` resolution condition the rest of the monorepo already uses.
 - Update package dependencies.
+- `ThreatsDataViews`: anchor the DataViews empty body (`.dataviews-no-results`) to `calc(100vh - 320px)` so it always reads as a full-height empty state. The internal `.dataviews-no-results` element already grows via `flex-grow: 1`, but only when its parent has a defined height — pinning the min-block-size from inside the component means consumers (Scan page, Protect) get the full-height layout without having to wire a custom flex chain.
 
 ## [1.3.0] - 2026-04-11
 ### Changed
@@ -184,7 +194,7 @@ This is an alpha version! The changes listed here are not final.
 ### Removed
 - Updated dependencies. [#39754]
 
-[1.3.1-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.3.0...v1.3.1-alpha
+[1.4.0-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.3.0...v1.4.0-alpha
 [1.3.0]: https://github.com/Automattic/jetpack-scan/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/Automattic/jetpack-scan/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/Automattic/jetpack-scan/compare/v1.2.0...v1.2.1
