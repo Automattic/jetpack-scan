@@ -27,9 +27,9 @@
 		"typecheck": "tsgo --noEmit"
 	},
 	"dependencies": {
-		"@automattic/jetpack-api": "^1.0.29-alpha",
-		"@automattic/jetpack-base-styles": "^1.2.6-alpha",
-		"@automattic/jetpack-components": "^1.12.6-alpha",
+		"@automattic/jetpack-api": "^1.0.29",
+		"@automattic/jetpack-base-styles": "^1.2.6",
+		"@automattic/jetpack-components": "^1.12.6",
 		"@wordpress/api-fetch": "7.48.0",
 		"@wordpress/components": "35.0.0",
 		"@wordpress/dataviews": "14.3.0",
