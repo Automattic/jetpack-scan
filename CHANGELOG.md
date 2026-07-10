@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update package dependencies.
 
+### Removed
+- Remove test files from published package.
+
 ## [1.4.9] - 2026-07-06
 ### Changed
 - Update package dependencies. [#50097] [#50183] [#50212]
