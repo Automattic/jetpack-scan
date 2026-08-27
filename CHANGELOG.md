@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.16-alpha] - unreleased
+
+This is an alpha version! The changes listed here are not final.
+
+### Changed
+- Update package dependencies.
+
 ## [1.4.15] - 2026-08-20
 ### Changed
 - Update dependencies. [#51407]
@@ -256,6 +263,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Updated dependencies. [#39754]
 
+[1.4.16-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.4.15...v1.4.16-alpha
 [1.4.15]: https://github.com/Automattic/jetpack-scan/compare/v1.4.14...v1.4.15
 [1.4.14]: https://github.com/Automattic/jetpack-scan/compare/v1.4.13...v1.4.14
 [1.4.13]: https://github.com/Automattic/jetpack-scan/compare/v1.4.12...v1.4.13
