@@ -13,6 +13,9 @@ This is an alpha version! The changes listed here are not final.
 - Update dependencies.
 - Update package dependencies.
 
+### Fixed
+- Threat list: Keep the threat type icons colored now that @wordpress/icons 16 draws them as strokes.
+
 ## [1.4.18] - 2026-09-09
 ### Changed
 - Internal updates.
