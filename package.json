@@ -1,6 +1,6 @@
 {
 	"name": "@automattic/jetpack-scan",
-	"version": "1.4.19-alpha",
+	"version": "1.4.20-alpha",
 	"private": false,
 	"description": "A JS client for consuming Jetpack Scan services",
 	"homepage": "https://github.com/Automattic/jetpack/tree/HEAD/projects/js-packages/scan/#readme",
@@ -27,9 +27,9 @@
 		"typecheck": "tsgo --noEmit"
 	},
 	"dependencies": {
-		"@automattic/jetpack-api": "^1.0.34-alpha",
+		"@automattic/jetpack-api": "^1.0.35-alpha",
 		"@automattic/jetpack-base-styles": "^1.2.13-alpha",
-		"@automattic/jetpack-components": "^3.0.3-alpha",
+		"@automattic/jetpack-components": "^3.0.4-alpha",
 		"@wordpress/api-fetch": "7.55.0",
 		"@wordpress/components": "40.1.0",
 		"@wordpress/dataviews": "19.0.0",
