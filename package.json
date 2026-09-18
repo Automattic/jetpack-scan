@@ -28,7 +28,7 @@
 	},
 	"dependencies": {
 		"@automattic/jetpack-api": "^1.0.35",
-		"@automattic/jetpack-base-styles": "^1.2.13",
+		"@automattic/jetpack-base-styles": "^1.2.14-alpha",
 		"@automattic/jetpack-components": "^3.1.0",
 		"@wordpress/api-fetch": "7.55.0",
 		"@wordpress/components": "40.1.0",
