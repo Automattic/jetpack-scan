@@ -28,8 +28,8 @@
 	},
 	"dependencies": {
 		"@automattic/jetpack-api": "^2.0.0",
-		"@automattic/jetpack-base-styles": "^1.2.14",
-		"@automattic/jetpack-components": "^3.2.1-alpha",
+		"@automattic/jetpack-base-styles": "^1.2.15-alpha",
+		"@automattic/jetpack-components": "^3.3.0-alpha",
 		"@wordpress/api-fetch": "7.55.0",
 		"@wordpress/components": "40.1.0",
 		"@wordpress/dataviews": "19.0.0",
