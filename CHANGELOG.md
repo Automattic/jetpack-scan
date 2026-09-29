@@ -5,13 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.4.21-alpha] - unreleased
+## [1.4.22-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
 ### Changed
 - Comment: Remove unused ThreatSeverityBadge stylesheet.
-- Update dependencies.
+
+## [1.4.21] - 2026-09-28
+### Changed
+- Update dependencies. [#52691]
 
 ## [1.4.20] - 2026-09-21
 ### Changed
@@ -285,7 +288,8 @@ This is an alpha version! The changes listed here are not final.
 ### Removed
 - Updated dependencies. [#39754]
 
-[1.4.21-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.4.20...v1.4.21-alpha
+[1.4.22-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.4.21...v1.4.22-alpha
+[1.4.21]: https://github.com/Automattic/jetpack-scan/compare/v1.4.20...v1.4.21
 [1.4.20]: https://github.com/Automattic/jetpack-scan/compare/v1.4.19...v1.4.20
 [1.4.19]: https://github.com/Automattic/jetpack-scan/compare/v1.4.18...v1.4.19
 [1.4.18]: https://github.com/Automattic/jetpack-scan/compare/v1.4.17...v1.4.18
