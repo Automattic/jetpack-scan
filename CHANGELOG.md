@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Changed
 - Update dependencies.
 
+### Fixed
+- Threats data views: Stop requesting two stylesheets that do not exist on pages built with wp-build.
+
 ## [1.4.23] - 2026-10-05
 ### Changed
 - Internal updates.
