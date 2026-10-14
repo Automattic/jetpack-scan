@@ -5,15 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.4.24-alpha] - unreleased
+## [1.4.25-alpha] - unreleased
 
 This is an alpha version! The changes listed here are not final.
 
-### Changed
-- Update dependencies.
-
 ### Fixed
 - Threats data views: Stop requesting two stylesheets that do not exist on pages built with wp-build.
+
+## [1.4.24] - 2026-10-12
+### Changed
+- Update dependencies. [#53250]
 
 ## [1.4.23] - 2026-10-05
 ### Changed
@@ -299,7 +300,8 @@ This is an alpha version! The changes listed here are not final.
 ### Removed
 - Updated dependencies. [#39754]
 
-[1.4.24-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.4.23...v1.4.24-alpha
+[1.4.25-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.4.24...v1.4.25-alpha
+[1.4.24]: https://github.com/Automattic/jetpack-scan/compare/v1.4.23...v1.4.24
 [1.4.23]: https://github.com/Automattic/jetpack-scan/compare/v1.4.22...v1.4.23
 [1.4.22]: https://github.com/Automattic/jetpack-scan/compare/v1.4.21...v1.4.22
 [1.4.21]: https://github.com/Automattic/jetpack-scan/compare/v1.4.20...v1.4.21
