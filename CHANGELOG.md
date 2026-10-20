@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 This is an alpha version! The changes listed here are not final.
 
+### Fixed
+- Threats list: Show a default icon for threats of an unknown type instead of crashing the list layout.
+
 ## [1.4.25] - 2026-10-19
 ### Changed
 - Update package dependencies. [#53004]
