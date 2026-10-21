@@ -12,6 +12,9 @@ This is an alpha version! The changes listed here are not final.
 ### Added
 - Support React 19.
 
+### Changed
+- Update package dependencies.
+
 ### Fixed
 - Threats list: Show a default icon for threats of an unknown type instead of crashing the list layout.
 
