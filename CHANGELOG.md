@@ -5,18 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.5.0-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.5.0] - 2026-10-26
 ### Added
-- Support React 19.
+- Support React 19. [#53882]
 
 ### Changed
-- Update package dependencies.
+- Update package dependencies. [#53951]
 
 ### Fixed
-- Threats list: Show a default icon for threats of an unknown type instead of crashing the list layout.
+- Threats list: Show a default icon for threats of an unknown type instead of crashing the list layout. [#53818]
 
 ## [1.4.25] - 2026-10-19
 ### Changed
@@ -314,7 +311,7 @@ This is an alpha version! The changes listed here are not final.
 ### Removed
 - Updated dependencies. [#39754]
 
-[1.5.0-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.4.25...v1.5.0-alpha
+[1.5.0]: https://github.com/Automattic/jetpack-scan/compare/v1.4.25...v1.5.0
 [1.4.25]: https://github.com/Automattic/jetpack-scan/compare/v1.4.24...v1.4.25
 [1.4.24]: https://github.com/Automattic/jetpack-scan/compare/v1.4.23...v1.4.24
 [1.4.23]: https://github.com/Automattic/jetpack-scan/compare/v1.4.22...v1.4.23
