@@ -14,6 +14,9 @@ This is an alpha version! The changes listed here are not final.
 - Update package dependencies.
 - Use the design system tooltip for the threat fixer button.
 
+### Fixed
+- Show no severity badge for a threat without a severity, instead of labeling it Low.
+
 ## [1.5.2] - 2026-11-02
 ### Changed
 - Update package dependencies. [#53869]
