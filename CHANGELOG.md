@@ -5,10 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.5.3-alpha] - unreleased
-
-This is an alpha version! The changes listed here are not final.
-
+## [1.5.3] - 2026-11-06
 ### Added
 - Add lastScanFailed to the ScanStatus type.
 
@@ -299,7 +296,7 @@ This is an alpha version! The changes listed here are not final.
 ### Removed
 - Updated dependencies. [#39754]
 
-[1.5.3-alpha]: https://github.com/Automattic/jetpack-scan/compare/v1.5.2...v1.5.3-alpha
+[1.5.3]: https://github.com/Automattic/jetpack-scan/compare/v1.5.2...v1.5.3
 [1.5.2]: https://github.com/Automattic/jetpack-scan/compare/v1.5.1...v1.5.2
 [1.5.1]: https://github.com/Automattic/jetpack-scan/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/Automattic/jetpack-scan/compare/v1.4.25...v1.5.0
