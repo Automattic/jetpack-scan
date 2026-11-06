@@ -9,8 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 This is an alpha version! The changes listed here are not final.
 
+### Added
+- Add lastScanFailed to the ScanStatus type.
+
 ### Changed
 - Describe the threat fixer button status to screen readers.
+- Sort a threat with no severity just above Low instead of below it.
 - Update package dependencies.
 - Use the design system tooltip for the threat fixer button.
 
